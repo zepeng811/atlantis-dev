@@ -12,6 +12,6 @@ provider "github" {}
 
 resource "github_branch" "branch" {
     repository = "atlantis-dev"
-    branch = "tf-branch-1"
+    branch = "tf-branch-2"
     source_branch = "master"
 }
