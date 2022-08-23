@@ -10,7 +10,7 @@ terraform {
 # Configure the GitHub Provider
 provider "github" {}
 
-resource "github_branch" {
+resource "github_branch" "branch" {
     repository = "atlantis-dev"
     branch = "tf-branch-1"
     source_branch = "master"
