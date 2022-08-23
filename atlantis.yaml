@@ -1,0 +1,8 @@
+version: 3
+automerge: true
+parallel_plan: true
+parallel_apply: true
+projects:
+- name: atlantis-dev
+  dir: .
+  terraform_version: 1.2.4
