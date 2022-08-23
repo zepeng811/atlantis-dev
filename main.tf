@@ -1,0 +1,17 @@
+terraform {
+  required_providers {
+    github = {
+      source  = "integrations/github"
+      version = "~> 4.0"
+    }
+  }
+}
+
+# Configure the GitHub Provider
+provider "github" {}
+
+resource "github_branch" {
+    repository = "atlantis-dev"
+    branch = "tf-branch-1"
+    source_branch = "master"
+}
