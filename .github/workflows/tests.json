@@ -1,0 +1,10 @@
+[
+  {
+    "project": "foo",
+    "config": "debug"
+  },
+  {
+    "project": "bar",
+    "config": "release"
+  } 
+]
