@@ -8,10 +8,10 @@ jobs:
       matrix:
         node-version: [12.x, 14.x]
     steps:
-      - name: Setup Node.js \\${{ matrix.node-version }}
+      - name: Setup Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
-          node-version: \\${{ matrix.node-version }}
+          node-version: ${{ matrix.node-version }}
       - name: Some job step that provides an output
         id: step1
         run: echo "::set-output name=output1::output-thing"
